@@ -1,0 +1,26 @@
+* Pen.el Ethereum development IDE
+Pen.el is set up as an Ethereum IDE.
+
+It has a running =geth= server.
+
+** Tutorials
+https://ethereum.org/en/developers/tutorials/
+
+** Set up ethereum
+*** DONE Geth
+    CLOSED: [2022-04-07 Thu 20:14]
+
+*** Dapptools
+https://dapp.tools/
+https://github.com/dapphub/dapptools#installation
+
+Need nix installed.
+
+** Starting Pen in Eth development mode
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  pen -n -nw -eth
+#+END_SRC
+
+- =-n= will avoid updating pen repositories
+- =-nw= will run Pen in a tmux session
+- =-eth= will start =geth= on startup and expose =geth= ports to the host
